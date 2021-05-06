@@ -19,7 +19,10 @@
 <body>
 
 <div class="container">
+  <br/>
+  
   <h2><center><%= title %></center></h2>
+  <br/>
   <form action="/save" method="post">
     <div class="form-group">
       <label for="name">Name:</label>
@@ -33,8 +36,13 @@
       <label for="phone">Phone No:</label>
       <input type="text" class="form-control" id="pwd" placeholder="Enter Phone No" name="phone_no" required>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-group">
+      <label for="phone">DateofBirth :</label>
+      <input type="date" class="form-control" id="dob" placeholder="Enter your DateofBirth" name="dateofbirth" required>
+    </div>
+    <button type="submit" class="btn btn-primary"><center>Submit</center></button>
   </form>
+  
 </div>
 
 </body>
