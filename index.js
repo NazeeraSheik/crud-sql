@@ -70,7 +70,7 @@ app.get('/edit/:userId',(req, res) => {
 
 app.post('/update',(req, res) => {
     const userId = req.body.id;
-    let sql = "update users SET name='"+req.body.name+"',  email='"+req.body.email+"',  phone_no='"+req.body.phone_no+"',phone_no='"+req.body.dateofbirth+"' where id ="+userId;
+    let sql = "update users SET name='"+req.body.name+"',  email='"+req.body.email+"',  phone_no='"+req.body.phone_no+"',dateofbirth='"+req.body.dateofbirth+"' where id ="+userId;
     let query = connection.query(sql,(err, results) => {
       if(err) throw err;
       res.redirect('/');
